@@ -53,9 +53,12 @@ body{ font-family: “Myriad Pro”, Arial, Helvetica, sans-serif !important; }
     margin-left: 20px;
     padding: 0 !important;
 }
-.logo img{
+.logo a img{
   width:150px;
   height: 72px;
+}
+.logo a{
+  padding:0 !important;
 }
 div#pp-nav {
     display: none;
