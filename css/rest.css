@@ -32,7 +32,7 @@ body{ font-family: “Myriad Pro”, Arial, Helvetica, sans-serif !important; }
     top: 0;
     right: 0;
     text-align: right;
-    height: 59px;
+    height: 80px;
     z-index: 70;
     width: 100%;
     padding: 0;
@@ -45,7 +45,36 @@ body{ font-family: “Myriad Pro”, Arial, Helvetica, sans-serif !important; }
 #menu{
   display:block;
 }
+.logo:hover{
+  background:transparent !important;
+}
+.logo {
+    float: left;
+    margin-left: 20px;
+    padding: 0 !important;
+}
+.logo img{
+  width:150px;
+  height: 72px;
+}
+div#pp-nav {
+    display: none;
+}
+.slideonefest{
+  height: 100%;
+}
+.bgfestslide{
+  position: absolute;
+  top:15%;
+  left:50%;
+  margin-left: -250px;
+  width:600px;
+  height: auto;
+}
 @media only screen and (max-width: 600px) {
+  div#pp-nav {
+    display: block;
+}
   .overlay{
     display:block;
   }
@@ -59,4 +88,17 @@ body{ font-family: “Myriad Pro”, Arial, Helvetica, sans-serif !important; }
   .item img{
     height: 100vh !important;
   }
+  #section2{
+		background-color:#fca1a0 !important;
+
+	}
+	#section3{
+    background-image: none !important;
+		background-color: #2f3f25 !important;
+
+	}
+	#section4{
+		background-color:#c4e5ea !important ;
+
+	}
 }

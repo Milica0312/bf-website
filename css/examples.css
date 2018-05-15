@@ -64,6 +64,7 @@ p{
 #menu li {
 	display:inline-block;
 	padding: 10px;
+  line-height: 42px;
 	color: white;
 	background:transparent;
 }
@@ -74,6 +75,7 @@ p{
 #menu li a{
 	text-decoration:none;
 	color: white;
+  font-size: 18px;
 }
 #menu li a:hover{
 	color:#2f3f25 !important;
@@ -98,7 +100,7 @@ p{
 	position:fixed;
 	top:0;
 	left:0;
-	height: 40px;
+	height: 80px;
 	z-index: 70;
 	width: 100%;
 	padding: 0;
@@ -236,7 +238,6 @@ p{
 	color: #444;
 }
 #section1 p{
-	color: #333;
 	color: rgba(0,0,0,0.3);
 }
 #section1 img{
@@ -271,7 +272,7 @@ p{
 	bottom: 0;
 }
 #section3 p{
-	color: #757575;
+
 }
 
 #colors2,

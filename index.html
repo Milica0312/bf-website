@@ -19,7 +19,10 @@
 	<link rel="stylesheet" type="text/css" href="css/examples.css" />
 	<link rel="stylesheet" type="text/css" href="css/rest.css" />
 	<link rel="stylesheet" type="text/css" href="css/nav.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+
 	<script type="text/javascript" src="js/jquery.pagepiling.min.js"></script>
 	<script type="text/javascript">
 		var deleteLog = false;
@@ -27,12 +30,12 @@
 		$(document).ready(function() {
 	    	$('#pagepiling').pagepiling({
 	    		menu: '#menu',
-	    		anchors: ['pocetna', 'izvodjaci', 'karte', 'lokacija', 'akreditacija'],
+	    		anchors: ['pocetna', 'izvodjaci', 'karte', 'lokacija', 'akreditacija', 'kontakt'],
 	    		navigation: {
 		            'textColor': '#f2f2f2',
 		            'bulletsColor': '#ccc',
 		            'position': 'right',
-		            'tooltips': ['POČETNA', 'IZVOĐAČI', 'KARTE', 'LOKACIJA', 'AKREDITACIJA']
+		            'tooltips': ['POČETNA', 'IZVOĐAČI', 'KARTE', 'LOKACIJA', 'AKREDITACIJA', 'KONTAKT']
 		        }
 			});
 	    });
@@ -70,11 +73,11 @@
 	/* Defining each section background and styles
 	* --------------------------------------- */
 	#section1{
-		background-color:gray;
+		background-color:#2f3f25 ;
 		top:0;
 	}
 	#section2{
-		background-color:purple;
+		background-color:#c4e5ea;
 
 	}
 	#section3{
@@ -82,11 +85,16 @@
 
 	}
 	#section4{
-		background-color:#9dbfc0 ;
+		background-color:#2f3f25 ;
+
 
 	}
 	#section5{
 		background-image: url(imgs/bckg4.png);
+
+	}
+	#section6{
+		background-color:#2f3f25 ;
 
 	}
 	#section3 h1{
@@ -132,11 +140,15 @@
 <body>
 
 	<ul id="menu">
+		<li class="logo">
+			<img src="imgs/logo.png" alt="logo"/>
+		</li>
 		<li data-menuanchor="pocetna" class="active"><a href="#pocetna">POČETNA</a></li>
 		<li data-menuanchor="izvodjaci"><a href="#izvodjaci">IZVOĐAČI</a></li>
 		<li data-menuanchor="karte"><a href="#karte">KARTE</a></li>
 		<li data-menuanchor="lokacija"><a href="#lokacija">LOKACIJA</a></li>
 		<li data-menuanchor="akreditacija"><a href="#akreditacija">AKREDITACIJE</a></li>
+		<li data-menuanchor="kontakt"><a href="#kontakt">KONTAKT</a></li>
 	</ul>
 
 
@@ -157,9 +169,10 @@
 				    <div class="carousel-inner">
 
 				      <div class="item active">
-				        <img src="imgs/bckg4.png" alt="Los Angeles" style="width:100%;">
-				        <div class="carousel-caption">
 
+				        <img src="imgs/bckg.png" alt="Los Angeles" style="width:100%;">
+				        <div class="carousel-caption slideonefest">
+											<img class="bgfestslide" src="imgs/bgfest.png" alt=""  />
 				        </div>
 				      </div>
 
@@ -198,17 +211,80 @@
 	    </div>
 	    <div class="section" id="section3">
 	    	<div class="intro">
-
+						<div class="tickets-holder">
+							<p>
+								Ulaznice možete kupiti na svim prodajnim mestima Eventim-a ili poručiti putem web sajta na adresi
+(pa eventim link).
+							</p>
+							<div class="timer">
+                <div class="timer-part" id="days"></div>
+                <div class="timer-part" id="hours"></div>
+                <div class="timer-part" id="minutes"></div>
+                <div class="timer-part" id="seconds"></div>
+              </div>
+							<div class="ticket-btn">
+								<a href="#" class="" >Kupi karte</a>
+							</div>
+						</div>
 	    	</div>
 	    </div>
 			<div class="section" id="section4">
-	    	<div class="intro">
+	    	<div class="intro loc">
+							<div class="locationholder">
+								<p>
+									Belgreat festival održava se na jedinstvenoj i prelepoj gradskoj lokaciji, beogradskoj plaži Lido na Velikom ratnom ostrvu.
+								</p>
+								<p>
+									Uređeno javno kupalište, plaža Lido,  nalazi se na teritoriji beogradske opštine Zemun. Pešački most , koji povezuje plažu Lido i Kej Oslobođena, udaljen je svega 4,3km od Trga Republike.
+								</p>
+								<p>
+									Do pešačkog mosta posetioci mogu doći gradskim prevozom i to linijama: 15, 17, 45, 73, 81, 82, 83, 84, 88, 610, 611,  704 i 707.
+								</p>
 
+
+							</div>
+							<div id="googleMap"></div>
 	    	</div>
 	    </div>
 			<div class="section" id="section5">
 	    	<div class="intro">
+						<div class="accred-holder">
+							<div class="akreditacijetxt">
+									<p>
+										Zahtevi za akreditacije se mogu slati na mail <a href="mailto:info@belgreatfestival.com">info@belgreatfestival.com.</a>
+									</p>
+									<p>
+										U zahtevu za akreditovanje potrebno je navesti ime medija, kao i ime i prezime novinara, odnosno snimatelja ili fotoreportera koga redakcija akredituje za Belgreat festival.
+									</p>
+								</div>
+								<img class="bgfest" src="imgs/bgfest.png" alt=""  />
+						</div>
+	    	</div>
+	    </div>
+			<div class="section" id="section6">
+	    	<div class="intro">
+						<div class="contact-holder">
+								<p>
+									Kontakt email <a href="mailto:info@belgreatfestival.com">info@belgreatfestival.com</a>
+								</p>
+								<img class="bgfest" src="imgs/bgfest.png" alt=""  />
+								<div class="nlholder">
+									<p>
+										Budite prvi koji će saznati više o novim imenima na festivalu i promotivnim cenama ulaznica .
+									</p>
+									<input type="email" name="email"><br>
+									<div class="socialicons">
+											<img src="imgs/facebook.png" alt="fb"  />
+											<img src="imgs/facebook.png" alt="fb"  />
+											<img src="imgs/facebook.png" alt="fb"  />
+											<img src="imgs/facebook.png" alt="fb"  />
+									</div>
 
+								</div>
+								<footer>
+									Sva prava zadržana. BELGREATFEST 2018.
+								</footer>
+						</div>
 	    	</div>
 	    </div>
 	</div>
@@ -228,7 +304,8 @@
 			<a href="#akreditacija">AKREDITACIJE</a>
 	</div>
 
-
-
+	<script type="text/javascript" src="js/timer.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script type="text/javascript" src="js/map.js"></script>
 </body>
 </html>
