@@ -335,13 +335,13 @@ p.festdate {
     color: white !important;
     text-align: center;
 }
-.ticket-btn{
+.ticket-btn-slide{
   position: absolute;
   top: 80%;
   width: 100%;
   text-align: center;
 }
-.ticket-btn a{
+.ticket-btn-slide a{
   padding:25px 80px;
   background-color: #9dbfc0 ;
   color:white;
@@ -350,7 +350,7 @@ p.festdate {
   text-transform: uppercase;
 
 }
-.ticket-btn a:hover{
+.ticket-btn-slide a:hover{
     background-color: #fca1a0;
     transition: 0.5s;
 

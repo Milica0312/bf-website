@@ -104,6 +104,26 @@ div#pp-nav {
   height: 13px !important;
   background-color: #fca1a0 !important;
 }
+.ticket-btn-slide{
+  position: absolute;
+  top: 80%;
+  width: 100%;
+  text-align: center;
+}
+.ticket-btn-slide a{
+  padding:15px 80px;
+  background-color: #9dbfc0 ;
+  color:white;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+
+}
+.ticket-btn-slide a:hover{
+    background-color: #fca1a0;
+    transition: 0.5s;
+
+}
 @media only screen and (max-width: 768px) {
 
   .carousel-control {
@@ -145,13 +165,13 @@ div#pp-nav {
   .bgfestslide{
     display:none;
   }
-  .ticket-btn{
+  .ticket-btn-slide{
     position: absolute;
     top: 80%;
     width: 100%;
     text-align: center;
   }
-  .ticket-btn a{
+  .ticket-btn-slide a{
     padding:15px 80px;
     background-color: #9dbfc0 ;
     color:white;
@@ -160,7 +180,7 @@ div#pp-nav {
     text-transform: uppercase;
 
   }
-  .ticket-btn a:hover{
+  .ticket-btn-slide a:hover{
       background-color: #fca1a0;
       transition: 0.5s;
 
