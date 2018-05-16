@@ -7,10 +7,6 @@ src: url('../fonts/MyriadPro-Regular.otf ') format("truetype");
 }
 body{ font-family: “Myriad Pro”, Arial, Helvetica, sans-serif !important; }
 .pp-tableCell {
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
-    height: 100%;
     padding: 0 !important;
 }
 .container {
@@ -71,10 +67,52 @@ div#pp-nav {
   top:15%;
   left:50%;
   margin-left: -250px;
-  width:600px;
-  height: auto;
+  width:500px;
+  height: auto !important;
 }
-@media only screen and (max-width: 600px) {
+#pp-nav li, .pp-slidesNav li {
+    margin-bottom: 13px;
+}
+#pp-nav li .active span, .pp-slidesNav .active span {
+    background: #fca1a0;
+}
+#pp-nav span, .pp-slidesNav span {
+    top: 2px;
+    left: 2px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #000;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    /* margin-bottom: 21px; */
+    bottom: 10px;
+}
+.navicon{
+  display:none !important;
+}
+#menu{
+  display:block !important;
+}
+.carousel-indicators li {
+  width:50px;
+  height: 13px;
+}
+.carousel-indicators li.active{
+  width:50px !important;
+  height: 13px !important;
+  background-color: #fca1a0 !important;
+}
+@media only screen and (max-width: 768px) {
+
+  .carousel-control {
+    display: none;
+}
+.carousel-indicators {
+    bottom: 10%;
+}
+
   div#pp-nav {
     display: block;
 }
@@ -101,7 +139,57 @@ div#pp-nav {
 
 	}
 	#section4{
-		background-color:#c4e5ea !important ;
+
 
 	}
+  .bgfestslide{
+    display:none;
+  }
+  .ticket-btn{
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    text-align: center;
+  }
+  .ticket-btn a{
+    padding:15px 80px;
+    background-color: #9dbfc0 ;
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+
+  }
+  .ticket-btn a:hover{
+      background-color: #fca1a0;
+      transition: 0.5s;
+
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .navicon{
+    display:block !important;
+  }
+  #menu{
+    display:none;
+  }
+  #menu {
+    position: absolute;
+    top: -100vh;
+    right: 0;
+    transition: top 700ms cubic-bezier(0.17, 0.04, 0.03, 0.44);
+    background: rgba(0,0,0,0.8);
+    height: 100vh;
+}
+li.logo {
+    width: 100%;
+    padding-left: -7%;
+    margin-left: 0;
+}
+#menu li {
+    display: block;
+    width: 100%;
+    text-align: center;
+
+}
 }

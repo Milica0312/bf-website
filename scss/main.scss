@@ -1,3 +1,6 @@
+@import "media.scss";
+@import "mixins.scss";
+
 .tickets-holder{
   p{
     color:white;
@@ -117,6 +120,7 @@
         padding: 10px 100px;
         margin-top: 30px;
         border:0;
+        color: #2f3f25 ;
     }
     input[type="submit"] {
     margin-top: 17px;
@@ -137,5 +141,9 @@
       position: absolute;
       width: 100%;
       top: 96%;
+      a{
+        text-decoration: none;
+        color: white;
+      }
   }
 }

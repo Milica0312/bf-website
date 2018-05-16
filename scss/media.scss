@@ -1,0 +1,171 @@
+@import "mixins.scss";
+
+#section1{
+  @include mQ(1700px){
+    .pp-tableCell{
+      display:block !important;
+      .container{
+        height:100%;
+        .carousel{
+          height: 100%;
+          .carousel-inner{
+            height: 100%;
+            .item{
+              height: 100%;
+              img{
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#section3{
+  .pp-tableCell{
+      @include mQ(600px){
+        display:block;
+      }
+    .intro{
+      .tickets-holder{
+        @include mQ(1024px){
+          p{
+            width:100%;
+          }
+        .timer{
+            width:80%;
+
+            .timer-part{
+                padding:20px 0;
+                span{
+                  font-size: 14px;
+                }
+              }
+
+          }
+        }
+          @include mQ(600px){
+              width:90%;
+              margin-left: 5%;
+                  margin-top: 20%;
+              .ticket-btn{
+                margin-top: 40px;
+                a{
+                    padding: 25px 50px;
+                    font-size: 25px;
+                }
+              }
+              .timer{
+                .timer-part{
+                  padding:0;
+                  font-size: 25px;
+                }
+              }
+          }
+        }
+      }
+    }
+  }
+
+#section4{
+  @include mQ(800px){
+    background-color:#c4e5ea !important ;
+  }
+  .pp-tableCell{
+    .loc{
+      .locationholder{
+        @include mQ(1024px){
+          top: 15%;
+        }
+        @include mQ(600px){
+        width: 90%;
+        margin: auto 6%;
+        position: absolute;
+        color: white;
+        top: 5%;
+        left: 0;
+        font-size: 12px;
+
+        p{
+            color: black !important;
+        }
+      }
+    }
+  }
+}
+}
+#section5{
+  .pp-tableCell{
+    @include mQ(768px){
+    display:block !important;
+    .intro{
+      .accred-holder{
+        .akreditacijetxt{
+
+          margin-top: 73%;
+          p{
+            width: 76%;
+            margin: 0 auto;
+            font-size: 15px;
+          }
+        }
+        .bgfest{
+          @include mQ(768px){
+            margin-left: -30%;
+            width: 60%;
+          }
+
+        }
+      }
+    }
+  }
+}
+}
+#section6{
+  .pp-tableCell{
+    @include mQ(500px){
+      display:block !important;
+    }
+    .intro{
+      .contact-holder{
+        .bgfest{
+          @include mQ(768px){
+            margin-left: -30%;
+            width: 60%;
+          }
+
+        }
+      }
+      .emailmargin{
+          @include mQ(500px){
+            margin: 10px auto !important;
+            position: absolute;
+            text-align: center;
+            top: 322px;
+            margin-right: -98px;
+            font-size: 16px;
+            width: 100%;
+          }
+        }
+      .nlholder{
+        @include mQ(500px){
+        top:36%;
+        p{
+          width:90%;
+          font-size: 17px;
+        }
+        input[type="email"] {
+          padding: 10px 0;
+          width: 100%;
+        }
+        }
+      }
+      footer{
+        @include mQ(500px){
+          top:84%;
+        }
+      }
+    }
+  }
+}
