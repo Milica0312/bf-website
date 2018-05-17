@@ -13,13 +13,31 @@
             #section1 .pp-tableCell .container .carousel .carousel-inner .item img {
               height: 100%; } }
 
+@media screen and (max-width: 768px) {
+  #section1 .festdate {
+    font-size: 16px; } }
+
+@media screen and (max-width: 768px) {
+  #section1 .bbb {
+    font-size: 16px;
+    top: 60%; } }
+
+@media screen and (max-width: 768px) {
+  #section1 .ticket-btn-slide {
+    top: 73%; } }
+
+@media screen and (max-width: 768px) {
+  #section1 .ticket-btn-slide a {
+    padding: 15px 50px; } }
+
 @media screen and (max-width: 600px) {
   #section3 .pp-tableCell {
     display: block; } }
 
 @media screen and (max-width: 1024px) {
   #section3 .pp-tableCell .intro .tickets-holder p {
-    width: 100%; }
+    width: 100%;
+    font-size: 15px; }
   #section3 .pp-tableCell .intro .tickets-holder .timer {
     width: 80%; }
     #section3 .pp-tableCell .intro .tickets-holder .timer .timer-part {
@@ -37,9 +55,11 @@
       #section3 .pp-tableCell .intro .tickets-holder .ticket-btn a {
         padding: 25px 50px;
         font-size: 25px; }
-    #section3 .pp-tableCell .intro .tickets-holder .timer .timer-part {
-      padding: 0;
-      font-size: 25px; } }
+    #section3 .pp-tableCell .intro .tickets-holder .timer {
+      width: 100%; }
+      #section3 .pp-tableCell .intro .tickets-holder .timer .timer-part {
+        padding: 0;
+        font-size: 25px; } }
 
 @media screen and (max-width: 800px) {
   #section4 {
@@ -82,31 +102,36 @@
 @media screen and (max-width: 768px) {
   #section6 .pp-tableCell .intro .contact-holder .bgfest {
     margin-left: -30%;
-    width: 60%; } }
+    width: 60%;
+    top: 10%; } }
 
 @media screen and (max-width: 500px) {
   #section6 .pp-tableCell .intro .emailmargin {
     margin: 10px auto !important;
     position: absolute;
     text-align: center;
-    top: 322px;
+    top: 30%;
     margin-right: -98px;
     font-size: 16px;
     width: 100%; } }
 
 @media screen and (max-width: 500px) {
   #section6 .pp-tableCell .intro .nlholder {
-    top: 36%; }
+    top: 33%;
+    padding: 24px; }
     #section6 .pp-tableCell .intro .nlholder p {
       width: 90%;
-      font-size: 17px; }
+      font-size: 15px; }
     #section6 .pp-tableCell .intro .nlholder input[type="email"] {
       padding: 10px 0;
-      width: 100%; } }
+      width: 100%;
+      margin-top: 10px; }
+    #section6 .pp-tableCell .intro .nlholder .socialicons {
+      padding-top: 15px; } }
 
 @media screen and (max-width: 500px) {
   #section6 .pp-tableCell .intro footer {
-    top: 84%; } }
+    top: 92%; } }
 
 .tickets-holder p {
   color: white;

@@ -1,2 +1,109 @@
-#section1 .pp-tableCell {
-  display: block !important; }
+@media screen and (max-width: 1700px) {
+  #section1 .pp-tableCell {
+    display: block !important; }
+    #section1 .pp-tableCell .container {
+      height: 100%; }
+      #section1 .pp-tableCell .container .carousel {
+        height: 100%; }
+        #section1 .pp-tableCell .container .carousel .carousel-inner {
+          height: 100%; }
+          #section1 .pp-tableCell .container .carousel .carousel-inner .item {
+            height: 100%; }
+            #section1 .pp-tableCell .container .carousel .carousel-inner .item img {
+              height: 100%; } }
+
+@media screen and (max-width: 600px) {
+  #section3 .pp-tableCell {
+    display: block; } }
+
+@media screen and (max-width: 1024px) {
+  #section3 .pp-tableCell .intro .tickets-holder p {
+    width: 100%; }
+  #section3 .pp-tableCell .intro .tickets-holder .timer {
+    width: 80%; }
+    #section3 .pp-tableCell .intro .tickets-holder .timer .timer-part {
+      padding: 20px 0; }
+      #section3 .pp-tableCell .intro .tickets-holder .timer .timer-part span {
+        font-size: 14px; } }
+
+@media screen and (max-width: 600px) {
+  #section3 .pp-tableCell .intro .tickets-holder {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20%; }
+    #section3 .pp-tableCell .intro .tickets-holder .ticket-btn {
+      margin-top: 40px; }
+      #section3 .pp-tableCell .intro .tickets-holder .ticket-btn a {
+        padding: 25px 50px;
+        font-size: 25px; }
+    #section3 .pp-tableCell .intro .tickets-holder .timer .timer-part {
+      padding: 0;
+      font-size: 25px; } }
+
+@media screen and (max-width: 800px) {
+  #section4 {
+    background-color: #c4e5ea !important; } }
+
+@media screen and (max-width: 1024px) {
+  #section4 .pp-tableCell .loc .locationholder {
+    top: 15%; } }
+
+@media screen and (max-width: 600px) {
+  #section4 .pp-tableCell .loc .locationholder {
+    width: 90%;
+    margin: auto 6%;
+    position: absolute;
+    color: white;
+    top: 5%;
+    left: 0;
+    font-size: 12px; }
+    #section4 .pp-tableCell .loc .locationholder p {
+      color: black !important; } }
+
+@media screen and (max-width: 768px) {
+  #section5 .pp-tableCell {
+    display: block !important; }
+    #section5 .pp-tableCell .intro .accred-holder .akreditacijetxt {
+      margin-top: 73%; }
+      #section5 .pp-tableCell .intro .accred-holder .akreditacijetxt p {
+        width: 76%;
+        margin: 0 auto;
+        font-size: 15px; } }
+  @media screen and (max-width: 768px) and (max-width: 768px) {
+    #section5 .pp-tableCell .intro .accred-holder .bgfest {
+      margin-left: -30%;
+      width: 60%; } }
+
+@media screen and (max-width: 500px) {
+  #section6 .pp-tableCell {
+    display: block !important; } }
+
+@media screen and (max-width: 768px) {
+  #section6 .pp-tableCell .intro .contact-holder .bgfest {
+    margin-left: -30%;
+    width: 60%; } }
+
+@media screen and (max-width: 500px) {
+  #section6 .pp-tableCell .intro .emailmargin {
+    margin: 10px auto !important;
+    position: absolute;
+    text-align: center;
+    top: 322px;
+    margin-right: -98px;
+    font-size: 16px;
+    width: 100%; } }
+
+@media screen and (max-width: 500px) {
+  #section6 .pp-tableCell .intro .nlholder {
+    top: 30%;
+    padding: 24px; }
+    #section6 .pp-tableCell .intro .nlholder p {
+      width: 90%;
+      font-size: 17px; }
+    #section6 .pp-tableCell .intro .nlholder input[type="email"] {
+      padding: 10px 0;
+      width: 100%; } }
+
+@media screen and (max-width: 500px) {
+  #section6 .pp-tableCell .intro footer {
+    top: 84%; } }

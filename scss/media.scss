@@ -15,9 +15,33 @@
               img{
                 height: 100%;
               }
+
             }
           }
         }
+      }
+    }
+  }
+
+    .festdate {
+        @include mQ(768px){
+          font-size: 16px;
+        }
+    }
+  .bbb{
+    @include mQ(768px){
+      font-size: 16px;
+      top:60%;
+    }
+  }
+  .ticket-btn-slide{
+    @include mQ(768px){
+        top:73%;
+    }
+    a{
+      @include mQ(768px){
+        padding:15px 50px;
+
       }
     }
   }
@@ -32,6 +56,7 @@
         @include mQ(1024px){
           p{
             width:100%;
+            font-size: 15px;
           }
         .timer{
             width:80%;
@@ -57,6 +82,7 @@
                 }
               }
               .timer{
+                width:100%;
                 .timer-part{
                   padding:0;
                   font-size: 25px;
@@ -133,6 +159,7 @@
           @include mQ(768px){
             margin-left: -30%;
             width: 60%;
+            top:10%;
           }
 
         }
@@ -142,7 +169,7 @@
             margin: 10px auto !important;
             position: absolute;
             text-align: center;
-            top: 322px;
+            top: 30%;
             margin-right: -98px;
             font-size: 16px;
             width: 100%;
@@ -150,20 +177,25 @@
         }
       .nlholder{
         @include mQ(500px){
-        top:36%;
+        top:33%;
+        padding: 24px;
         p{
           width:90%;
-          font-size: 17px;
+          font-size: 15px;
         }
         input[type="email"] {
           padding: 10px 0;
           width: 100%;
+          margin-top: 10px;
+        }
+        .socialicons{
+          padding-top: 15px;
         }
         }
       }
       footer{
         @include mQ(500px){
-          top:84%;
+          top:92%;
         }
       }
     }
