@@ -21,7 +21,7 @@ body{ font-family: “Myriad Pro”, Arial, Helvetica, sans-serif !important; }
     margin-top: -10px;
 }
 .carousel-indicators {
-    bottom: 10%;
+    bottom: 15%;
 }
 #menu {
     position: fixed;
@@ -127,13 +127,43 @@ div#pp-nav {
     transition: 0.5s;
 
 }
+.item {
+    background-image: url(../imgs/bckgl.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.fadelisce{
+  width:700px;
+  height: auto;
+}
 @media only screen and (max-width: 768px) {
+  .logo a img {
+    width: 150px;
+    height: 72px;
+    padding: 10px;
+    float: left;
+}
+  #section5{
 
+background-position: left !important;
+
+
+	}
+/*  .item img{
+    height: 100vh !important;
+  }*/
+  .item {
+      background-image: url(../imgs/mobbckg.png);
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+  }
   .carousel-control {
     display: none;
 }
 .carousel-indicators {
-    bottom: 15%;
+    bottom: 12%;
 }
 
   div#pp-nav {
@@ -155,24 +185,34 @@ div#pp-nav {
 
     height: 100vh;
   }
-  .item img{
-    height: 100vh !important;
-  }
+.mapholder{
+  position: absolute;
+  bottom:0;
+  left: 0;
+}
+
   #section2{
 		background-color:#fca1a0 !important;
 
 	}
 	#section3{
-    background-image: none !important;
-		background-color: #2f3f25 !important;
-
+    /*background-image: none !important;
+		background-color: #2f3f25 !important;*/
+    background-image: url(../imgs/section3.png) !important;
+		background-attachment: fixed;
+background-position: center;
+background-size: cover;
 	}
 	#section4{
 
 
 	}
   .bgfestslide{
-    display:none;
+    width: 90%;
+    height: auto !important;
+    top: 22%;
+    /* left: 15%; */
+    margin-left: -45%;
   }
   .ticket-btn-slide{
     position: absolute;
@@ -194,10 +234,27 @@ div#pp-nav {
       transition: 0.5s;
 
   }
+  .locationholder p{
+    font-size: 11px;
+  }
 }
 @media only screen and (max-width: 1024px) {
+  .mapholder {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+  }
+  .mapholder iframe {
+    width: 100%;
+    height: 300px;
+}
   .navicon{
     display:block !important;
+  }
+  .locationholder p{
+    font-size: 14px;
   }
   #menu{
     display:none;
@@ -221,4 +278,10 @@ li.logo {
     text-align: center;
 
 }
+}
+
+@media only screen and (max-width: 1700px) {
+  .carousel-indicators {
+      bottom: 10%;
+  }
 }

@@ -73,7 +73,11 @@
           @include mQ(600px){
               width:90%;
               margin-left: 5%;
-                  margin-top: 20%;
+                  margin-top: 30%;
+                  p{
+                    width:80%;
+                    margin:0 10%;
+                  }
               .ticket-btn{
                 margin-top: 40px;
                 a{
@@ -128,6 +132,7 @@
     .intro{
       .accred-holder{
         .akreditacijetxt{
+          background-color: rgba(0, 0, 0, 0.4);
 
           margin-top: 73%;
           p{

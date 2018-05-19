@@ -355,3 +355,12 @@ p.festdate {
     transition: 0.5s;
 
 }
+.mapholder {
+  position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+}
+.mapholder iframe{
+  width:100%;
+}
