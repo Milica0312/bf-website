@@ -5,6 +5,113 @@ font-family: ('MyriadPro-Regular'),
 src: url('../fonts/MyriadPro-Regular.otf ') format("truetype");
 
 }
+/*izvodjaci*/
+.artistsholder{
+	overflow: hidden;
+    width: 100%;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-out;
+    position: relative;
+    transition: all 1s cubic-bezier(0,0,0.25,1);
+    transform-style: preserve-3d;
+}
+.oneart{
+	margin-right:1%;
+	margin-bottom:10px;
+}
+.artistdetailrel{
+  position: relative;
+}
+.closeart {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.placeforimg {
+    width: 50%;
+    background-image: url(../imgs/photo.jpeg);
+    background-position: center;
+
+    background-size: cover;
+    float: left;
+    height: 100%;
+    background-position: center center;
+transition: opacity 2000ms cubic-bezier(0.215, 0.61, 0.355, 1) 0ms, -webkit-transform 2000ms cubic-bezier(0.215, 0.61, 0.355, 1) 0ms;
+}
+.artistdetail{
+	bottom:-100vh;
+	position:absolute;
+  overflow: hidden;
+	left:0;
+	transition: opacity 500ms cubic-bezier(0.215, 0.61, 0.355, 1) 0ms;
+	width:80%;
+	height:600px;
+	background-color: #000;
+	margin-left:10%;
+	transition:1s;
+	transform-style: preserve-3d;
+    transition: all 1s ease-out;
+	transform: rotateX(80deg);
+opacity: 0
+
+}
+.zoomoutheader {
+  width:50%%;
+  -webkit-animation: zoomout 1s ease-in;
+  animation: zoomout 1s ease-in;
+  transition: all .1s ease-in;
+  overflow: hidden;
+}
+
+
+
+/* Zoom in Keyframes */
+
+/* Zoom out Keyframes */
+@-webkit-keyframes zoomout {
+  0% {transform: scale(0.8);}
+/*  50% {transform: scale(1);}*/
+
+  100% {transform: scale(1);}
+}
+
+
+.opacity0{
+  opacity: 0 !important;
+}
+.aboutartist{
+  width: 50%;
+  background-image: url(../imgs/artist2.png);
+  background-position: top;
+  background-size: cover;
+  float: left;
+  height: 100%;
+}
+.aboutartist h2{
+  color: #2f3f25;
+  margin-top: 10%;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.aboutartistp{
+  line-height: 20px !important;
+font-size: 25px !important;
+padding: 105px 0;
+width: 69% !important;
+opacity: 1;
+}
+.showartistdetail {
+    top: 28% !important;
+    /*transform: rotateY(180deg);*/
+	transform: perspective(50em) rotateX(0);
+	transition:1s;
+opacity: 1;
+
+}
+
+/**/
 body{ font-family: “Myriad Pro”, Arial, Helvetica, sans-serif !important; }
 .pp-tableCell {
     padding: 0 !important;
@@ -131,13 +238,43 @@ div#pp-nav {
     background-image: url(../imgs/bckgl.png);
     background-attachment: fixed;
     background-size: cover;
-    background-position: center;
+        background-position: right bottom;
+}
+img.sponzor1 {
+    width: 80px;
+    height: 80px !important;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+img.sponzor2 {
+    width: 80px;
+    height: 80px !important;
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
 }
 .fadelisce{
   width:700px;
   height: auto;
 }
 @media only screen and (max-width: 768px) {
+  .showartistdetail {
+    top:5% !important;
+  }
+  .artistdetail {
+    width: 100%;
+    margin:0;
+}
+.placeforimg {
+    width: 100%;
+    height: 50%;
+}
+.aboutartist {
+    width: 100%;
+    height: 50%;
+}
+
   .logo a img {
     width: 150px;
     height: 72px;
@@ -239,6 +376,9 @@ background-size: cover;
   }
 }
 @media only screen and (max-width: 1024px) {
+  	#section3{
+      opacity: 1;
+    }
   .mapholder {
     position: absolute;
     bottom: 0;

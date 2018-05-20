@@ -322,18 +322,18 @@ p{
 	width: 90px;
 }
 p.bbb {
-    position: absolute;
-    top: 70%;
-    text-align: center;
-    width: 100%;
+    position: absolute !important;
+    top: 70% !important;
+    text-align: center !important;
+    width: 100% !important;
     color: white !important;
 }
 p.festdate {
-    position: absolute;
-    top:50%;
-    width: 100%;
+    position: absolute !important;
+    top:50% !important;
+    width: 100% !important;
     color: white !important;
-    text-align: center;
+    text-align: center !important;
 }
 .ticket-btn-slide{
   position: absolute;

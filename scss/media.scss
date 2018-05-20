@@ -1,7 +1,7 @@
 @import "mixins.scss";
 
 #section1{
-  @include mQ(1700px){
+
     .pp-tableCell{
       display:block !important;
       .container{
@@ -19,7 +19,7 @@
             }
           }
         }
-      }
+
     }
   }
 
@@ -45,6 +45,102 @@
       }
     }
   }
+}
+#section2{
+  .pp-tableCell{
+    .intro{
+      position: relative;
+      height: 100vh;
+      top:0;
+
+      .programholder{
+
+        width:100%;
+        background: rgba(0, 0, 0, 0.8);
+        padding-top: 150px;
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        left: 0;
+        @include mQ(1024px){
+          padding-top: 50px;
+        }
+        .programselectors{
+          padding: 30px;
+          @include mQ(1024px){
+                padding: 15px 50px;
+          }
+          a{
+            padding: 25px 80px;
+            background-color: #9dbfc0;
+            color: white;
+            text-decoration: none;
+            font-size: 35px;
+            text-transform: uppercase;
+            @include mQ(1024px){
+              padding: 7px 11px;
+              background-color: #9dbfc0;
+              color: white;
+              text-decoration: none;
+              font-size: 19px;
+              text-transform: uppercase;
+              display: block;
+              margin-bottom: 5px;
+            }
+            &:hover{
+              transition: 0.5s;
+              background-color: #fca1a0;
+
+            }
+            &:visited{
+                background-color: #9dbfc0;
+            }
+          }
+        }
+        .timelineholder{
+          position: relative;
+          height: 50vh;
+          width: 80%;
+            margin: 0 10%;
+            margin-top: 70px;
+            @include mQ(1024px){
+              margin-top: 15px;
+            }
+          #beats{
+            display:block;
+          }
+          .stage{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
+            .onepart{
+              float:left;
+              width:50%;
+              display: block;
+              h2{
+                font-size: 35px;
+                padding-bottom: 37px;
+                @include mQ(1024px){
+                  font-size: 25px;
+                }
+              }
+              p{
+                  line-height: 50px;
+                  @include mQ(1024px){
+                    font-size: 15px;
+                  }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
 }
 #section3{
   .pp-tableCell{
@@ -109,13 +205,14 @@
           top: 15%;
         }
         @include mQ(600px){
-        width: 90%;
-        margin: auto 6%;
-        position: absolute;
-        color: white;
-        top: 5%;
-        left: 0;
-        font-size: 12px;
+          width: 100%;
+  padding: auto 2%;
+  position: absolute;
+  color: white;
+  padding-top: 6%;
+  left: 0;
+  font-size: 12px;
+  top: 0;
 
         p{
             color: black !important;
@@ -133,7 +230,7 @@
       .accred-holder{
         .akreditacijetxt{
           background-color: rgba(0, 0, 0, 0.4);
-
+              padding: 10px 5px;
           margin-top: 73%;
           p{
             width: 76%;

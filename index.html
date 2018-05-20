@@ -62,8 +62,14 @@
 		color: #fff;
 		margin:0;
 		padding:0;
+		font-family: “Myriad Pro”, Arial, Helvetica, sans-serif !important;
 	}
-
+	p{
+		    font-family: “Myriad Pro”, Arial, Helvetica, sans-serif !important;
+	}
+	a{
+		    font-family: “Myriad Pro”, Arial, Helvetica, sans-serif !important;
+	}
 	/* Centered texts in each section
 	* --------------------------------------- */
 	.section{
@@ -89,7 +95,11 @@
 		top:0;
 	}
 	#section2{
-		background-color:#c4e5ea;
+	/*	background-color:#c4e5ea;*/
+	background-image: url(imgs/section2.png);
+	background-attachment: fixed;
+background-position: center;
+background-size: cover;
 
 	}
 	#section3{
@@ -98,9 +108,15 @@
 background-position: center;
 background-size: cover;
 
+position: absolute;
+
 	}
 	#section4{
-		background-color:#2f3f25 ;
+	/*	background-color:#2f3f25 ;*/
+	background-image: url(imgs/smth.png);
+	background-attachment: fixed;
+background-position: center;
+background-size: cover;
 
 
 	}
@@ -199,7 +215,8 @@ background-size: cover;
 				    <div class="carousel-inner">
 
 				      <div class="item active">
-
+								<!--	<img class="sponzor1" src="imgs/zemun.png" alt=""  />
+									<img class="sponzor2" src="imgs/tob.png" alt=""  />-->
 				        <div class="carousel-caption slideonefest">
 											<img class="bgfestslide " src="imgs/bgfest.png" alt=""  />
 
@@ -216,7 +233,7 @@ background-size: cover;
 											</div>
 				        </div>
 				      </div>
-
+<!--
 				      <div class="item">
 				        <img src="imgs/bckg4.png" alt="Chicago" style="width:100%;">
 				        <div class="carousel-caption">
@@ -229,7 +246,7 @@ background-size: cover;
 				        <div class="carousel-caption">
 
 				        </div>
-				      </div>
+				      </div>-->
 
 				    </div>
 
@@ -247,7 +264,180 @@ background-size: cover;
 	    </div>
 	    <div class="section" id="section2">
 	    	<div class="intro">
+					<div class="programholder">
+							<div class="programselectors">
+									<a class="control" data-rel="beats" href="#">BEATS</a>
+									<a class="control" data-rel="beach" href="#">BEACH</a>
+									<a class="control" data-rel="beyond" href="#">BEYOND</a>
+							</div>
+							<div class="timelineholder">
+								<div id="beats" class="stage">
+									<div class="onepart">
+										<h2>Petak</h2>
 
+										<div class="oneart" data-rel="petak1">	Test
+
+										</div>
+
+										<div class="oneart" data-rel="petak2">	Test
+
+										</div>
+										<div class="oneart" data-rel="petak3">	Test
+
+										</div>
+										<div class="oneart" data-rel="petak4">	Test
+
+										</div>
+										<div class="oneart" data-rel="petak5">	Test
+
+										</div>
+										<div class="oneart" data-rel="petak6">	Test
+
+										</div>
+									</div>
+
+									<div class="onepart">
+										<h2>Subota</h2>
+
+										<div class="oneart">	Test
+											<div class="artistdetail">
+												details1
+											</div>
+										</div>
+
+										<div class="oneart">	Test
+											<div class="artistdetail">
+												details1
+											</div>
+										</div>
+										<div class="oneart">	Test
+											<div class="artistdetail">
+												details1
+											</div>
+										</div>
+										<div class="oneart">	Test
+											<div class="artistdetail">
+												details1
+											</div>
+										</div>
+										<div class="oneart">	Test
+											<div class="artistdetail">
+												details1
+											</div>
+										</div>
+										<div class="oneart">	Test
+											<div class="artistdetail">
+												details1
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="beach" class="stage">
+									<div class="onepart">
+										<h2>Petak</h2>
+
+										<p >	Test1	</p>
+										<p>	Test1	</p>
+										<p>	Test1	</p>
+										<p>	Test1	</p>
+
+									</div>
+									<div class="onepart">
+										<h2>Subota</h2>
+
+										<p>	Test1	</p>
+										<p>	Test1	</p>
+										<p>	Test1	</p>
+										<p>	Test1	</p>
+									</div>
+								</div>
+								<div id="beyond" class="stage">
+									<div class="onepart">
+										<h2>Petak</h2>
+
+										<p>	Test2	</p>
+										<p>	Test2	</p>
+										<p>	Test2	</p>
+										<p>	Test2	</p>
+
+									</div>
+									<div class="onepart">
+										<h2>Subota</h2>
+
+										<p>	Test2	</p>
+										<p>	Test2	</p>
+										<p>	Test2	</p>
+										<p>	Test2	</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="relart">
+
+								<div class="artistdetail close1" id="petak1">
+											<img class="closeart" data-rel="close1" src="imgs/cross-out-white.png" alt="close" />
+										<div class="placeforimg ">
+										</div>
+										<div class="aboutartist">
+												<h2>Test artist</h2>
+												<p class="aboutartistp">
+													cpen with any layout-affecting content that loads after initial render, including images or even fonts.
+												</p>
+										</div>
+								</div>
+								<div class="artistdetail close2" id="petak2">
+											<img class="closeart"  data-rel="close2" src="imgs/cross-out-white.png" alt="close" />
+										<div class="placeforimg">
+										</div>
+										<div class="aboutartist">
+												<h2>Test artist</h2>
+												<p>
+petak2												</p>
+										</div>
+								</div>
+								<div class="artistdetail close3" id="petak3">
+											<img class="closeart" data-rel="close3" src="imgs/cross-out-white.png" alt="close" />
+										<div class="placeforimg">
+										</div>
+										<div class="aboutartist">
+												<h2>Test artist</h2>
+												<p>
+petak3												</p>
+										</div>
+								</div>
+								<div class="artistdetail close4" id="petak4">
+											<img class="closeart" data-rel="close4" src="imgs/cross-out-white.png" alt="close" />
+										<div class="placeforimg">
+										</div>
+										<div class="aboutartist">
+												<h2>Test artist</h2>
+												<p>
+petak3												</p>
+										</div>
+								</div>
+								<div class="artistdetail close5" id="petak5">
+											<img class="closeart" data-rel="close5" src="imgs/cross-out-white.png" alt="close" />
+										<div class="placeforimg">
+										</div>
+										<div class="aboutartist">
+												<h2>Test artist</h2>
+												<p>
+petak3												</p>
+										</div>
+								</div>
+								<div class="artistdetail close6" id="petak6">
+											<img class="closeart" data-rel="close6" src="imgs/cross-out-white.png" alt="close" />
+										<div class="placeforimg">
+										</div>
+										<div class="aboutartist">
+												<h2>Test artist</h2>
+												<p>
+petak3												</p>
+										</div>
+								</div>
+							</div>
+
+					</div>
 	    	</div>
 	    </div>
 	    <div class="section" id="section3">
@@ -365,6 +555,30 @@ background-size: cover;
 	    // Animation complete.
 	 // });
 	});
+	</script>
+	<script>
+	$(".control").click(function(e) {
+      e.preventDefault();
+     $('.stage').fadeOut('slow');
+
+      $('#' + $(this).data('rel')).slideDown(2000);
+
+});
+
+	</script>
+	<script>
+	$('.oneart').click( function() {
+		 $('.placeforimg').toggleClass('zoomoutheader');
+		$('#' + $(this).data('rel')).toggleClass('showartistdetail', 2000, "easeOutSine");
+//$('.artistdetail').toggleClass('showartistdetail', 2000, "easeOutSine");
+});
+
+	</script>
+	<script>
+
+$('.closeart').click( function() {
+$('.' + $(this).data('rel')).removeClass('showartistdetail', 2000, "easeOutSine");
+});
 	</script>
 </body>
 </html>

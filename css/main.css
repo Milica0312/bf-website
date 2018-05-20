@@ -1,17 +1,16 @@
 @charset "UTF-8";
-@media screen and (max-width: 1700px) {
-  #section1 .pp-tableCell {
-    display: block !important; }
-    #section1 .pp-tableCell .container {
+#section1 .pp-tableCell {
+  display: block !important; }
+  #section1 .pp-tableCell .container {
+    height: 100%; }
+    #section1 .pp-tableCell .container .carousel {
       height: 100%; }
-      #section1 .pp-tableCell .container .carousel {
+      #section1 .pp-tableCell .container .carousel .carousel-inner {
         height: 100%; }
-        #section1 .pp-tableCell .container .carousel .carousel-inner {
+        #section1 .pp-tableCell .container .carousel .carousel-inner .item {
           height: 100%; }
-          #section1 .pp-tableCell .container .carousel .carousel-inner .item {
+          #section1 .pp-tableCell .container .carousel .carousel-inner .item img {
             height: 100%; }
-            #section1 .pp-tableCell .container .carousel .carousel-inner .item img {
-              height: 100%; } }
 
 @media screen and (max-width: 768px) {
   #section1 .festdate {
@@ -29,6 +28,85 @@
 @media screen and (max-width: 768px) {
   #section1 .ticket-btn-slide a {
     padding: 15px 50px; } }
+
+#section2 .pp-tableCell .intro {
+  position: relative;
+  height: 100vh;
+  top: 0; }
+  #section2 .pp-tableCell .intro .programholder {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding-top: 150px;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    left: 0; }
+    @media screen and (max-width: 1024px) {
+      #section2 .pp-tableCell .intro .programholder {
+        padding-top: 50px; } }
+    #section2 .pp-tableCell .intro .programholder .programselectors {
+      padding: 30px; }
+      @media screen and (max-width: 1024px) {
+        #section2 .pp-tableCell .intro .programholder .programselectors {
+          padding: 15px 50px; } }
+      #section2 .pp-tableCell .intro .programholder .programselectors a {
+        padding: 25px 80px;
+        background-color: #9dbfc0;
+        color: white;
+        text-decoration: none;
+        font-size: 35px;
+        text-transform: uppercase; }
+        @media screen and (max-width: 1024px) {
+          #section2 .pp-tableCell .intro .programholder .programselectors a {
+            padding: 7px 11px;
+            background-color: #9dbfc0;
+            color: white;
+            text-decoration: none;
+            font-size: 19px;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 5px; } }
+        #section2 .pp-tableCell .intro .programholder .programselectors a:hover {
+          -webkit-transition: 0.5s;
+          -o-transition: 0.5s;
+          transition: 0.5s;
+          background-color: #fca1a0; }
+        #section2 .pp-tableCell .intro .programholder .programselectors a:visited {
+          background-color: #9dbfc0; }
+    #section2 .pp-tableCell .intro .programholder .timelineholder {
+      position: relative;
+      height: 50vh;
+      width: 80%;
+      margin: 0 10%;
+      margin-top: 70px; }
+      @media screen and (max-width: 1024px) {
+        #section2 .pp-tableCell .intro .programholder .timelineholder {
+          margin-top: 15px; } }
+      #section2 .pp-tableCell .intro .programholder .timelineholder #beats {
+        display: block; }
+      #section2 .pp-tableCell .intro .programholder .timelineholder .stage {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden; }
+        #section2 .pp-tableCell .intro .programholder .timelineholder .stage .onepart {
+          float: left;
+          width: 50%;
+          display: block; }
+          #section2 .pp-tableCell .intro .programholder .timelineholder .stage .onepart h2 {
+            font-size: 35px;
+            padding-bottom: 37px; }
+            @media screen and (max-width: 1024px) {
+              #section2 .pp-tableCell .intro .programholder .timelineholder .stage .onepart h2 {
+                font-size: 25px; } }
+          #section2 .pp-tableCell .intro .programholder .timelineholder .stage .onepart p {
+            line-height: 50px; }
+            @media screen and (max-width: 1024px) {
+              #section2 .pp-tableCell .intro .programholder .timelineholder .stage .onepart p {
+                font-size: 15px; } }
 
 @media screen and (max-width: 600px) {
   #section3 .pp-tableCell {
@@ -74,13 +152,14 @@
 
 @media screen and (max-width: 600px) {
   #section4 .pp-tableCell .loc .locationholder {
-    width: 90%;
-    margin: auto 6%;
+    width: 100%;
+    padding: auto 2%;
     position: absolute;
     color: white;
-    top: 5%;
+    padding-top: 6%;
     left: 0;
-    font-size: 12px; }
+    font-size: 12px;
+    top: 0; }
     #section4 .pp-tableCell .loc .locationholder p {
       color: black !important; } }
 
@@ -89,6 +168,7 @@
     display: block !important; }
     #section5 .pp-tableCell .intro .accred-holder .akreditacijetxt {
       background-color: rgba(0, 0, 0, 0.4);
+      padding: 10px 5px;
       margin-top: 73%; }
       #section5 .pp-tableCell .intro .accred-holder .akreditacijetxt p {
         width: 76%;
@@ -193,15 +273,21 @@
   position: relative;
   height: 100%; }
   .loc .locationholder {
-    width: 70%;
-    margin: auto 15%;
-    position: absolute;
-    color: white;
-    top: 150px;
-    left: 0; }
+    width: 100%;
+    position: relative;
+    color: black;
+    left: 0;
+    padding-top: 150px;
+    height: 52vh;
+    background: rgba(0, 0, 0, 0.2); }
+    @media screen and (max-width: 768px) {
+      .loc .locationholder {
+        padding-top: 0; } }
     .loc .locationholder p {
-      width: 100%;
-      color: white !important; }
+      width: 60%; }
+      @media screen and (max-width: 768px) {
+        .loc .locationholder p {
+          width: 90%; } }
   .loc #googleMap {
     width: 100%;
     height: 500px;
@@ -267,7 +353,10 @@
 .contact-holder footer {
   position: absolute;
   width: 100%;
-  top: 96%; }
+  top: 93%; }
   .contact-holder footer a {
     text-decoration: none;
     color: white; }
+    @media screen and (max-width: 768px) {
+      .contact-holder footer a {
+        display: block; } }

@@ -61,15 +61,21 @@
   height:100%;
 
   .locationholder {
-    width: 70%;
-    margin:auto 15%;
-    position: absolute;
-    color: white;
-    top: 150px;
+    width: 100%;
+    position: relative;
+    color: black;
     left: 0;
+    padding-top: 150px;
+    height: 52vh;
+    background: rgba(0,0,0,0.2);
+    @include mQ(768px){
+      padding-top: 0;
+    }
       p{
-        width: 100%;
-        color:white !important;
+        width: 60%;
+        @include mQ(768px){
+          width:90%;
+        }
       }
   }
     #googleMap {
@@ -150,10 +156,13 @@
   footer {
       position: absolute;
       width: 100%;
-      top: 96%;
+      top: 93%;
       a{
         text-decoration: none;
         color: white;
+        @include mQ(768px){
+            display: block;
+        }
       }
   }
 }
