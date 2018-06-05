@@ -1,20 +1,107 @@
+@import url("nav.css");
+@import url("examples.css");
+@import url("animate.css");
 @font-face {
 
-font-family: ('MyriadPro-Regular'),
+font-family: "Typold Regular";
 
-src: url('../fonts/MyriadPro-Regular.otf ') format("truetype");
+src: url('../fonts/font.otf ');
 
 }
+@font-face {
+
+font-family: "Typold Italic";
+
+src: url('../fonts/italic.otf ');
+
+}
+body{
+	    font-family: “Typold Regular”, sans-serif !important;
+}
+p{
+	font-family: “Typold Regular”, sans-serif !important;
+}
+a{
+	font-family: “Typold Regular”, sans-serif !important;
+}
 /*izvodjaci*/
+.yt{
+opacity: 0}
+.oneartist {
+	height: 250px;
+	background-color: #2f3f25;
+	width:24% !important;
+	float: left;
+	margin-bottom: 1%;
+}
+.oneartist p{
+	display:none;
+}
+.oneartist img {
+    width: 100%;
+    height: 250px;
+}
+.oneartist:nth-child(1){
+	margin-right: 1%;
+}
+.oneartist:nth-child(2){
+	margin-right: 1%;
+}
+.oneartist:nth-child(3){
+	margin-right: 1%;
+}
+.oneartist:nth-child(4){
+	margin-right: 1%;
+}
+.oneartist:nth-child(5){
+	margin-right: 1%;
+}
+.oneartist:nth-child(6){
+	margin-right: 1%;
+}
+.oneartist:nth-child(7){
+	margin-right: 1%;
+}
+.oneartist:nth-child(8){
+	margin-right: 1%;
+}
+.oneartist:nth-child(9){
+	margin-right: 1%;
+}
+.oneartist:nth-child(10){
+	margin-right: 1%;
+}
+.oneartist:nth-child(11){
+	margin-right: 1%;
+}
+.oneartist:nth-child(12){
+	margin-right: 1%;
+}
+.oneartist:nth-child(13){
+	margin-right: 1%;
+}
 .artistsholder{
 	overflow: hidden;
-    width: 100%;
+    width: 80%;
     text-align: center;
     transform-style: preserve-3d;
     transition: all 0.5s ease-out;
     position: relative;
     transition: all 1s cubic-bezier(0,0,0.25,1);
     transform-style: preserve-3d;
+    margin: 0 10%;
+    padding-top: 8%;
+}
+.overlaydiv{
+		width:100%;
+		height: 100%;
+		display:none;
+     background-color: rgba(0,0,0,0.8);
+		 position: absolute;
+    top: 0;
+}
+.overlaydivshow{
+	display:block;
 }
 .oneart{
 	margin-right:1%;
@@ -30,14 +117,18 @@ src: url('../fonts/MyriadPro-Regular.otf ') format("truetype");
 }
 .placeforimg {
     width: 50%;
-    background-image: url(../imgs/photo.jpeg);
+    /*background-image: url(../imgs/photo.jpeg);
     background-position: center;
 
-    background-size: cover;
+    background-size: cover;*/
     float: left;
     height: 100%;
     background-position: center center;
 transition: opacity 2000ms cubic-bezier(0.215, 0.61, 0.355, 1) 0ms, -webkit-transform 2000ms cubic-bezier(0.215, 0.61, 0.355, 1) 0ms;
+}
+.placeforimg img {
+    width: 100%;
+    height: 100%;
 }
 .artistdetail{
 	bottom:-100vh;
@@ -81,38 +172,47 @@ opacity: 0
   opacity: 0 !important;
 }
 .aboutartist{
-  width: 50%;
-  background-image: url(../imgs/artist2.png);
-  background-position: top;
-  background-size: cover;
+  width: 50%;/*
+  background-image: url(../imgs/artist2.png);*/
+	/*background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(../imgs/artist2.png);
+
+      background-position: left top;
+  background-size: cover;*/
   float: left;
   height: 100%;
+	background-color: #fca1a0;;
 }
 .aboutartist h2{
-  color: #2f3f25;
-  margin-top: 10%;
+/*  color: #2f3f25;*/
+  margin-top: 2%;
   font-size: 25px;
   font-weight: bold;
-  text-transform: uppercase;
+}
+.artistsocialicons img{
+	width:30px;
+	height: 30px;
 }
 .aboutartistp{
   line-height: 20px !important;
-font-size: 25px !important;
-padding: 105px 0;
-width: 69% !important;
+font-size: 16px !important;
 opacity: 1;
 }
 .showartistdetail {
-    top: 28% !important;
-    /*transform: rotateY(180deg);*/
+	top: 0 !important;
+	/* transform: rotateY(180deg); */
 	transform: perspective(50em) rotateX(0);
-	transition:1s;
-opacity: 1;
+	transition: 1s;
+	opacity: 1;
+	height: 71vh;
+	margin: 8% 10%;
 
 }
-
+.transition{
+	transition: 2s;
+	transform: perspective(50em) rotateX(360%);
+}
 /**/
-body{ font-family: “Myriad Pro”, Arial, Helvetica, sans-serif !important; }
+
 .pp-tableCell {
     padding: 0 !important;
 }
@@ -128,7 +228,7 @@ body{ font-family: “Myriad Pro”, Arial, Helvetica, sans-serif !important; }
     margin-top: -10px;
 }
 .carousel-indicators {
-    bottom: 15%;
+    bottom: 10%;
 }
 #menu {
     position: fixed;
@@ -171,10 +271,10 @@ div#pp-nav {
 }
 .bgfestslide{
   position: absolute;
-  top:15%;
+  top:32%;
   left:50%;
-  margin-left: -250px;
-  width:500px;
+	margin-left: -20%;
+    width: 40%;
   height: auto !important;
 }
 #pp-nav li, .pp-slidesNav li {
@@ -221,13 +321,19 @@ div#pp-nav {
   text-align: center;
 }
 .ticket-btn-slide a{
-  padding:15px 80px;
-  background-color: #9dbfc0 ;
-  color:white;
-  text-decoration: none;
-  font-size: 18px;
-  text-transform: uppercase;
+	padding: 15px 50px;
+    background-color: #9dbfc0;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-size: 20px;
 
+}
+.indextickets img {
+    margin-bottom: 2px;
+		width: 50px;
+		margin-right: 15px;
 }
 .ticket-btn-slide a:hover{
     background-color: #fca1a0;
@@ -235,7 +341,7 @@ div#pp-nav {
 
 }
 .item {
-    background-image: url(../imgs/bckgl.png);
+    background-image: url(../imgs/bckglm.png);
     background-attachment: fixed;
     background-size: cover;
         background-position: right bottom;
@@ -258,9 +364,129 @@ img.sponzor2 {
   width:700px;
   height: auto;
 }
+@media only screen and (max-width: 1700px) {
+  .carousel-indicators {
+      bottom: 10%;
+  }
+	img.lisce1 {
+    top: -28% !important;
+}
+img.velikolisce {
+    bottom: -24% !important;
+	}
+}
+@media only screen and (max-width: 1400px) {
+	.artistsholder {
+    width: 90%;
+    margin: 0 5%;
+}
+	img.shape {
+    position: absolute;
+    top: 18% !important;
+    left: -22% !important;
+    width: 50% !important;
+    z-index: -4 !important;
+}
+img.lisce1 {
+    top: -9% !important;
+}
+img.lisce2 {
+    top: -36% !important;
+	}
+img.velikolisce {
+    bottom: -6% !important;
+}
+img.velikolisce {
+    bottom: -6% !important;
+		 z-index: -3 !important;
+}
+img.lisce3 {
+    position: absolute;
+		bottom: -31% !important;
+    right: -39% !important;
+    width: 76% !important;
+    z-index: -4;
+}
+/*  #section3{
+		background-image: url(../imgs/bckg4.png) !important;
+			background-attachment: fixed;
+		background-position: center;
+		background-size: cover;
+		background-color: none;
+	}
+	img.lisce1 {
+	display:none !important;
+	}
+	img.shape {
+    display:none !important;
+}
+img.velikolisce {
+	display:none !important;
+}
+img.fila2 {
+display:none !important;
+}
+
+img.lisce2 {
+		display:none !important;
+}
+
+img.lisce3 {
+	display:none !important;
+}
+img.shape2 {
+	display:none !important;
+}
+*/
+}
+
 @media only screen and (max-width: 768px) {
+	.yt{
+		opacity: 1;
+	}
+	.aboutartist iframe{
+		display:none;
+	}
+	.nottoshow{
+		display:none !important;
+	}
+	.artistsholder {
+    width: 90%;
+    margin: 0 5%;
+    height: 100%;
+		padding-top: 17%;
+}
+.oneartist {
+    width: 49% !important;
+		height: auto;
+
+}
+.oneartist p{
+	display:block;
+	font-size: 11px !important;
+	height: 30px;
+}
+p.aboutartistp {
+    font-size: 11px !important;
+    width: 85% !important;
+}
+.oneartist img {
+    display:none;
+}
+	#section3{
+		background-image: url(../imgs/karteresp.png) !important;
+			background-attachment: fixed;
+		background-position: center;
+		background-size: cover;
+		background-color: none;
+	}
+	p{
+		font-size: 14px !important;
+	}
   .showartistdetail {
-    top:5% !important;
+    top:0% !important;
+		height: 100vh;
+		overflow: scroll;
   }
   .artistdetail {
     width: 100%;
@@ -268,11 +494,17 @@ img.sponzor2 {
 }
 .placeforimg {
     width: 100%;
-    height: 50%;
+    height: 40%;
 }
 .aboutartist {
     width: 100%;
-    height: 50%;
+    height: auto;
+}
+.aboutartist h2{
+	margin:0;
+}
+.aboutartistp{
+	font-size: 11px !important;
 }
 
   .logo a img {
@@ -347,7 +579,7 @@ background-size: cover;
   .bgfestslide{
     width: 90%;
     height: auto !important;
-    top: 22%;
+    top: 32%;
     /* left: 15%; */
     margin-left: -45%;
   }
@@ -424,4 +656,72 @@ li.logo {
   .carousel-indicators {
       bottom: 10%;
   }
+}
+@media screen and (max-height: 900px) {
+	.intro p{
+			width: 80%;
+			margin: 12px auto;
+			font-size: 16px;
+	}
+
+
+	iframe{
+		margin-top: 5px;
+	}
+	 .locationholder {
+
+	    height: 57vh !important;
+	}
+	.mapholder {
+    height: 43vh;
+
+	}
+	.mapholder > iframe{
+		height:100%;
+	}
+	.aboutartist {
+    overflow-y: scroll;
+	}
+}
+@media screen and (max-height: 900px)and (min-width: 768px) {
+	.showartistdetail {
+		height: 85vh;
+		margin:6% 10%;
+
+	}
+	p.aboutartistp {
+	    font-size: 13px !important;
+	}
+}
+@media screen and (max-height: 800px)and (max-width: 1350px) {
+	img.lisce2 {
+		top: -41% !important;
+		right: -23%;
+    width: 76%;
+	}
+	img.lisce3 {
+    position: absolute;
+    bottom: -38% !important;
+    right: -17% !important;
+    width: 50% !important;
+    z-index: -4;
+}
+img.velikolisce {
+    bottom: -17% !important;
+		left: -24%;
+width: 71%;
+	}
+	img.lisce1 {
+    top: -28% !important;
+}
+.socialicons img {
+    width: 25px;
+    margin-bottom: 10px;
+}
+.socialicons {
+    padding-top: 10px !important;
+}
+footer{
+	margin-top: 10px;
+}
 }

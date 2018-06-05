@@ -8,6 +8,7 @@ form,fieldset,input,textarea,p,blockquote,th,td {
 }
 a{
 	text-decoration:none;
+  font-family: “Typold”, sans-serif !important;
 }
 table {
     border-spacing: 0;
@@ -37,6 +38,7 @@ h1,h2,h3,h4,h5,h6 {
     margin:0;
     padding:0;
     color:#f2f2f2;
+    font-family: “Typold”, sans-serif !important;
 }
 q:before,q:after {
     content:'';
@@ -48,6 +50,7 @@ abbr,acronym { border: 0;
  * --------------------------------------- */
 body{
 	color: #f2f2f2;
+  font-family: “Typold”, sans-serif !important;
 }
 h1{
 	font-size: 6em;
@@ -75,7 +78,7 @@ p{
 #menu li a{
 	text-decoration:none;
 	color: white;
-  font-size: 18px;
+  font-size: 14px;
 }
 #menu li a:hover{
 	color:#2f3f25 !important;
@@ -109,9 +112,9 @@ p{
 
 
 .intro p{
-	width: 50%;
-	margin: 0 auto;
-	font-size: 1.5em;
+    width: 80%;
+    margin: 32px auto;
+    font-size: 16px;
 }
 .twitter-share-button{
 	position: fixed !important;
@@ -323,17 +326,19 @@ p{
 }
 p.bbb {
     position: absolute !important;
-    top: 70% !important;
+    top: 64% !important;
     text-align: center !important;
     width: 100% !important;
     color: white !important;
+    font-size: 20px;
 }
 p.festdate {
     position: absolute !important;
-    top:50% !important;
+    top:22% !important;
     width: 100% !important;
     color: white !important;
     text-align: center !important;
+    font-size: 18px;
 }
 .ticket-btn-slide{
   position: absolute;

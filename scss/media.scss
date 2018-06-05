@@ -29,6 +29,10 @@
         }
     }
   .bbb{
+    span{
+      font-family: “Typold Italic”, sans-serif !important;
+      font-weight: 100;
+    }
     @include mQ(768px){
       font-size: 16px;
       top:60%;
@@ -40,10 +44,15 @@
     }
     a{
       @include mQ(768px){
-        padding:15px 50px;
-
-      }
+      padding: 13px 30px;
+      font-size: 18px;
+        img{
+          margin-bottom: 0;
+          width:35px;
+          margin-right: 10px;
+        }
     }
+  }
   }
 }
 #section2{
@@ -56,7 +65,7 @@
       .programholder{
 
         width:100%;
-        background: rgba(0, 0, 0, 0.8);
+      /*  background: rgba(0, 0, 0, 0.8);*/
         padding-top: 150px;
         position: absolute;
         top: 0;
@@ -177,8 +186,13 @@
               .ticket-btn{
                 margin-top: 40px;
                 a{
-                    padding: 25px 50px;
-                    font-size: 25px;
+                  padding: 13px 38px;
+                  font-size: 18px;
+                    img{
+                      margin-bottom: 0;
+                      width:35px;
+                      margin-right: 10px;
+                    }
                 }
               }
               .timer{
